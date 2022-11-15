@@ -1,0 +1,116 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.open {
+  transition: opacity 1s;
+  opacity: 1;
+}
+
+.popup-inner {
+  position: relative;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgb(33, 84, 103);
+  background: radial-gradient(
+    circle,
+    rgba(33, 84, 103, 1) 0%,
+    rgba(0, 36, 19, 1) 65%,
+    rgba(13, 11, 9, 1) 87%,
+    rgba(7, 10, 16, 1) 96%,
+    rgba(7, 10, 16, 1) 100%
+  );
+  box-shadow: 1px 2px 10px #999;
+  max-width: 640px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #0f394b;
+  color: white;
+  font-size: 25px;
+  border: none;
+}
+
+.close-btn:hover {
+  background-color: #1a6680;
+  cursor: pointer;
+}
+
+.popup-image {
+  width: 100%;
+  height: 100%;
+  border: 1px solid grey;
+  border-radius: 2px;
+}
+
+.image-wrapper {
+  width: 40%;
+}
+
+.list-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  margin-left: 30px;
+}
+
+.list-wrapper h3 {
+  margin-bottom: 0px;
+}
+
+ul,
+ol {
+  margin-top: 3px;
+}
+
+.popup-inner p {
+  text-indent: 25px;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: left;
+}
+/* <div className="popup-inner">
+        <button className="close-btn" onClick={() => props.setTrigger(false)}>
+          X
+        </button>
+        <div className="popup-header">
+          <div className="image-wrapper">
+            <img src={drink.strDrinkThumb} className="popup-image"></img>
+          </div>
+          <div className="list-wrapper">
+            <h3>Ingredients: </h3>
+            <ul>
+              {ingredients.map((elem) => (
+                <li className="ingredients list">{elem}</li>
+              ))}
+            </ul>
+            <h3>Measures: </h3>
+            <ol>
+              {measures.map((elem) => (
+                <li className="measures list">{elem}</li>
+              ))}
+            </ol>
+          </div>
+        </div>
+        <div className="popup-footer">
+          <h3>Instructions:</h3>
+          <p>{drink.strInstructions}</p>
+        </div>
+      </div> */

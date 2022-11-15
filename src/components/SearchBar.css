@@ -1,0 +1,22 @@
+.searchDiv input,
+.price input {
+  width: 30%;
+  align-items: center;
+  height: 30px;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid rgba(47, 47, 47, 0.5);
+}
+
+.searchDiv,
+.price {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.searchText,
+.price {
+  font-size: 25px;
+  margin-bottom: 5px;
+  color: white;
+}
